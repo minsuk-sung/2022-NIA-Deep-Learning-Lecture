@@ -1,0 +1,20 @@
+albumentations @ git+https://github.com/albu/albumentations@0627133cc6371d4bca4bcde71386c96bf4a8cea1
+efficientnet-pytorch==0.7.1
+fire==0.4.0
+imageio==2.9.0
+numpy==1.19.1
+opencv-contrib-python==4.5.1.48
+opencv-python==4.5.1.48
+pandas==1.2.4
+Pillow @ file:///tmp/build/80754af9/pillow_1615057347459/work
+plotly==4.14.3
+psutil==5.8.0
+PyYAML==5.3.1
+scikit-image==0.18.1
+scikit-learn==0.24.0
+scipy==1.5.4
+seaborn==0.11.1
+torch==1.8.0
+torchaudio==0.8.0a0+a751e1d
+torchsummary==1.5.1
+torchvision==0.2.1

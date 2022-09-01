@@ -1,0 +1,39 @@
+network: "VGG"
+
+seed: 42
+device: 'cuda'
+
+data:
+  base_path: "../../data/fakeface/"
+  train: "../../data/fakeface/train.csv"
+  test: "../../data/fakeface/test.csv"
+  random_split: True
+  test_proportions: 0.2
+  crop: True
+  num_classes: 2
+
+input_size:
+  height: 224
+  width: 224
+
+model:
+  pretrained: False
+  in_channels: 3
+  init_weights: True
+
+optimizer:
+  type: 'Adam'
+  lr: 1e-4
+  weight_decay: 1e-2
+
+checkpoint: "" 
+test_checkpoint: ""
+
+prefix: "./log/VGG"
+
+batch_size: 32
+num_workers: 8
+num_epochs: 20
+print_epochs: 1
+dropout_rate: 0.1
+EARLY_STOPPING_EPOCH: 5
